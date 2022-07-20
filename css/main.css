@@ -16,7 +16,13 @@ body {
   margin: 0;
   font-family: Roboto, "sans-serif";
 }
-
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
 .container {
   width: 90%;
   max-width: 1600px;
@@ -43,7 +49,9 @@ a {
   color: inherit;
 }
 
-/* Header Section */
+/* ----------------------------------
+Header Section
+------------------------------------ */
 header {
   margin: 2rem;
   color: var(--white);
@@ -72,7 +80,7 @@ header .info {
 header .info p {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--gray);
 }
 header .btn {
@@ -98,8 +106,48 @@ header .div-img {
 header img {
   height: 520px;
 }
+/* Header section is done */
+
+/*---------------------------------
+ Footer section is starting from here
+------------------------- */
+
+footer {
+  background-color: var(--black);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: var(--white);
+}
+footer .title {
+  margin: 0;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+footer .hr {
+  width: 100%;
+  min-height: 1px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.103);
+}
+footer .pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul {
+  margin: 20px auto;
+  display: flex;
+  gap: 1.7rem;
+  color: var(--gray);
+}
 
 /* media queries */
+
+/* ---------------
+Tablet   Screen 
+
+------------------------ */
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   /* ------------
@@ -109,8 +157,10 @@ header img {
     width: 95%;
   }
   header .big-hero-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 15px 0;
+  }
+  header .info p {
   }
   header img {
     height: 400px;
@@ -118,7 +168,20 @@ header img {
   header .btn {
     margin-top: 0.8rem;
   }
+
+  /* --------------
+  footer section starts
+  --------------------*/
+  footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
+
+/* ---------------
+Mobile Screen 
+
+------------------------ */
 @media only screen and (min-width: 0px) and (max-width: 776px) {
   /* ------------------
     media queries for header section start
@@ -140,5 +203,16 @@ header img {
   }
   header .btn {
     margin-top: 1.3rem;
+  }
+
+  /* --------------
+  footer section starts
+  --------------------*/
+  footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  footer ul {
+    flex-direction: column;
   }
 }
