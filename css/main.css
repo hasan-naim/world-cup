@@ -1,14 +1,55 @@
 /* Global Varaiables */
-:root{
-
-}
-*{
-    box-sizing: border-box;
-    
+:root {
+  --black: #161616;
+  --red: #dd0000;
+  --gray: #b9b9b9;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Roboto', sans-serif;
+/* Global Css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "sans-serif";
+}
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.text-black {
+  color: var(--black);
+}
+.text-gray {
+  color: var(--gray);
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Section */
+header {
+  margin: 3rem;
+}
+
+header .container {
+  background-color: var(--black);
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
