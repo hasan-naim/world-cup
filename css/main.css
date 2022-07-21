@@ -67,7 +67,13 @@ header .grid {
   gap: 1rem;
   border-radius: 30px;
   padding-bottom: 0;
+  transition: all 0.4s;
 }
+/* header .grid:hover {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    transition: all 0.4s;
+    transform: translate(0px, -10px);
+  } */
 header .big-hero-title {
   font-size: 4rem;
   font-weight: bold;
@@ -86,13 +92,15 @@ header .info p {
 header .btn {
   background: var(--red);
   display: inline-block;
-
+  border: 1px solid var(--red);
   margin-top: 1rem;
   padding: 0.7rem 1rem;
   font-size: 1.3rem;
   font-weight: 600;
   border-radius: 5px;
+  animation: BtnAnimation 700ms ease infinite alternate;
 }
+
 header .btn span {
   display: flex;
   width: fit-content;
@@ -245,6 +253,29 @@ footer ul {
 }
 footer .socials ul {
   justify-content: center;
+}
+/* --------------------
+Keyframes
+---------------------*/
+@keyframes BtnAnimation {
+  0% {
+    transform: translate(10px, 0px);
+    background-color: var(--white);
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+  /* 33% {
+    transform: translate(0, 0px);
+  }
+  66% {
+    transform: translate(-250px, 0px);
+  } */
+  100% {
+    transform: translate(-10px, 0px);
+    background-color: var(--red);
+    color: var(--white);
+    border: 1px solid var(--red);
+  }
 }
 
 /* media queries */
