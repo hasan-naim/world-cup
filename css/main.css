@@ -180,6 +180,34 @@ main section .card .inner-info {
 .div-btn {
   display: none;
 }
+/* Upcoming page */
+main section .card.upcoming {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+section .card .flags {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 35px 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card .flags span {
+  font-size: 20px;
+  font-weight: 700;
+}
+section .card .desc h2 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+section .card .desc span {
+  color: #4d4d4d;
+}
 /*---------------------------------
  Footer section is starting from here
 ------------------------- */
@@ -226,7 +254,7 @@ Tablet   Screen
 
 ------------------------ */
 
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 577px) and (max-width: 1110px) {
   /* ------------
     media queries for header section
     ----------------- */
@@ -243,6 +271,7 @@ Tablet   Screen
   }
   header .btn {
     margin-top: 0.8rem;
+    margin-bottom: 2rem;
   }
   /* --------------
   main section
@@ -276,6 +305,7 @@ Tablet   Screen
     padding: 0.7rem 0.8rem;
     border-radius: 5px;
   }
+
   /* --------------
   footer section starts
   --------------------*/
@@ -293,7 +323,7 @@ Tablet   Screen
 Mobile Screen 
 
 ------------------------ */
-@media only screen and (min-width: 0px) and (max-width: 556px) {
+@media only screen and (min-width: 0px) and (max-width: 576px) {
   /* ------------------
     media queries for header section start
      ------------- */
