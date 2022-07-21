@@ -111,13 +111,14 @@ header img {
 /*---------------------------------
  Main section is starting from here
 ------------------------- */
-
+main {
+  margin: 8rem 0;
+}
 main .grid {
   display: grid;
   grid-template-columns: 25% 1fr;
   /* grid-template-rows: ; */
   gap: 24px;
-  margin: 8rem 0;
 }
 
 main aside {
@@ -176,6 +177,9 @@ main section .card .inner-info {
   display: flex;
   gap: 20px;
 }
+.div-btn {
+  display: none;
+}
 /*---------------------------------
  Footer section is starting from here
 ------------------------- */
@@ -228,8 +232,7 @@ Tablet   Screen
     font-size: 2.8rem;
     margin: 15px 0;
   }
-  header .info p {
-  }
+
   header img {
     height: 400px;
   }
@@ -240,11 +243,7 @@ Tablet   Screen
   main section
   --------------------- */
   main .grid {
-    display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: ; */
-    gap: 24px;
-    margin: 8rem 0;
   }
   main aside {
     background: var(--white);
@@ -259,6 +258,18 @@ Tablet   Screen
   }
   main section {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--red);
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0.7rem 0.8rem;
+    border-radius: 5px;
   }
   /* --------------
   footer section starts
@@ -315,6 +326,9 @@ Mobile Screen
   }
   main section {
     grid-template-columns: 1fr;
+  }
+  .div-btn {
+    display: none;
   }
   /* --------------
   footer section starts
